@@ -148,5 +148,11 @@ if __name__ == '__main__':
 - At the bottom of the code snippet, we import "xmlrunner" which allows us to run our tests and generate a report in XML format.
 - The first parameter is the directory you would like to save the .xml file to. The other parameters were practices from another individual.
 
+### Additonal Testing Tools
 
-### 
+- *Luigi* (package written in Python) Python-based framework for expressing data pipelines.
+	- It can be used a dependency manager. With two classes, it can determine 1. what do I require? 2. what is the output going and where is it going? 3. what is the task you want me to run?
+	- http://help.mortardata.com/technologies/luigi/how_luigi_works
+	- There is a built in luigi-slack module to send notifications to a designated slack account or email notifications.
+- *Logging* is module used to customize your error logs and display of information. Opposed to print() everything and having to remove it.
+
