@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuite errors="2" failures="0" name="CalculatorTest-20170606184636" tests="2" time="0.001">
+	<testcase classname="CalculatorTest" name="test_add" time="0.001">
+		<error message="8 != 9 : FAILURE" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "unit_test.py", line 20, in test_add
+    self.assertEquals(value, 9, 'FAILURE')
+AssertionError: 8 != 9 : FAILURE
+]]>		</error>
+	</testcase>
+	<testcase classname="CalculatorTest" name="test_subtract" time="0.000">
+		<error message="2 != 1 : FAILURE" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "unit_test.py", line 26, in test_subtract
+    self.assertEquals(value, 1, 'FAILURE')
+AssertionError: 2 != 1 : FAILURE
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[8
+2
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
