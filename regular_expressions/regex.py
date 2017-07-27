@@ -49,5 +49,10 @@ print(titleTags)
 
 
 
+def parseInfo(info):
+	re.findall(r'\n\n')
+
+
+
 
 
