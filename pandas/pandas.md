@@ -54,3 +54,22 @@ print(stock_prices)
 ```
 
 - window variable implies the amount of periods.
+
+### Create Datafram object from Python objects
+
+```
+stocks = ["IBM", "APPLE", "TWITTER"]
+prices = [115, 119, 19]
+
+portfolio = list(zip(stocks,prices))
+
+portfolioDf = pd.DataFrame(data=portfolio, columns=['Stocks', 'Prices'])
+print(portfolioDf)
+```
+
+#### Adding another column to Dataframe
+
+- From a list:
+```
+porfolioDf["NewColumn"] = ["New", "Old", "Better"]
+```

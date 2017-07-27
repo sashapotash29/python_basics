@@ -36,6 +36,18 @@ stock_prices = web.DataReader("TWTR", "google", start, end)
 # stock_prices['MA'] = stock_prices['Close'].rolling(window=10).mean()
 # print(stock_prices)
 
+# # CREATE DATAFRAME OBJECT
+# stocks = ["IBM", "APPLE", "TWITTER"]
+# prices = [115, 119, 19]
+
+# portfolio = list(zip(stocks,prices))
+
+# portfolioDf = pd.DataFrame(data=portfolio, columns=['Stocks', 'Prices'])
+# print(portfolioDf)
+
+# # ADDING ANOTHER COLUMN TO DATAFRAME
+# porfolioDf["NewColumn"] = ["New", "Old", "Better"]
+
 
 
 
