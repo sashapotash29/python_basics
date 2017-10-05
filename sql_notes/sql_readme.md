@@ -40,7 +40,10 @@ SELECT * FROM physics_table UNION ALL SELECT * FROM chemistry_table
 - A view is a dynamically generated table that is read only. For example, lets say you have a few tables that are combined in an intricate way to produce a sub table. Now this operation at the time of its execution creates the temp table we are interested in. But maybe we want to save this somewhere for later. If we save it into a table, the table will only have a snapshot of the information at that time. A view will store the operation necessary to create itself and run that operation each time it is called, thus pulling the latest information.
 - NOTE A View is read-only!!
 ```
-CREATE VIEW "name_of_the_view" AS "SELECT * FROM employee_table AS emp INNER JOIN salary_table AS sal ON sal.employee_id = emp.id"
+CREATE VIEW "name_of_the_view" AS 
+"SELECT * FROM employee_table AS emp 
+INNER JOIN salary_table AS sal 
+ON sal.employee_id = emp.id"
 ```
 - Each time the view is called, the join operation will be executed and any new information that fulfills the condition above will appear.
 
